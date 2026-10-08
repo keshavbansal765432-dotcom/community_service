@@ -1,0 +1,2 @@
+import Sidebar from './Sidebar';
+export default function AppShell({role,title,children}:{role:'admin'|'teacher';title:string;children:React.ReactNode}){return <div className="shell"><Sidebar role={role}/><main className="main"><header className="topbar"><div className="crumb"><strong>Edu School</strong><span style={{margin:'0 6px'}}>/</span>{title}</div><div className="top-actions"><div className="avatar">{role==='admin'?'AD':'T'}</div></div></header>{children}</main></div>}

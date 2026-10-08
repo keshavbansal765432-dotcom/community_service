@@ -1,0 +1,3 @@
+import AppShell from "@/components/AppShell";
+export default function Page(){return <TeacherPage title="Performance" desc="Review class and student performance before using the future AI recommendation layer."/>}
+function TeacherPage({title,desc}:{title:string;desc:string}){return <AppShell role="teacher" title={title}><div className="content"><div className="page-head"><div><h1>{title}</h1><p className="subtitle">{desc}</p></div></div><section className="card panel"><div className="empty">Performance charts will be powered by marks and attendance data once Supabase is connected.</div></section></div></AppShell>}

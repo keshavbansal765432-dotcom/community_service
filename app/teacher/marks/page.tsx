@@ -1,0 +1,3 @@
+import AppShell from "@/components/AppShell";
+export default function Page(){return <TeacherPage title="Marks & Assessments" desc="Create assessments and record student marks."/>}
+function TeacherPage({title,desc}:{title:string;desc:string}){return <AppShell role="teacher" title={title}><div className="content"><div className="page-head"><div><h1>{title}</h1><p className="subtitle">{desc}</p></div><button className="btn primary">+ New assessment</button></div><section className="card panel"><div className="empty">Assessment and marks UI is ready for database integration.</div></section></div></AppShell>}

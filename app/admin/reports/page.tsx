@@ -1,0 +1,3 @@
+import AppShell from "@/components/AppShell";
+export default function Page(){return <Placeholder title="Reports" desc="School-level academic and attendance reports."/>}
+function Placeholder({title,desc}:{title:string;desc:string}){return <AppShell role="admin" title={title}><div className="content"><div className="page-head"><div><h1>{title}</h1><p className="subtitle">{desc}</p></div><button className="btn">Export</button></div><section className="card panel"><div className="empty">Report tables and charts will consume Supabase data in the next phase.</div></section></div></AppShell>}

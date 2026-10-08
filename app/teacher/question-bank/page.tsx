@@ -1,0 +1,3 @@
+import AppShell from "@/components/AppShell";
+export default function Page(){return <TeacherPage title="Question Bank" desc="Save, search and reuse questions generated or entered by teachers."/>}
+function TeacherPage({title,desc}:{title:string;desc:string}){return <AppShell role="teacher" title={title}><div className="content"><div className="page-head"><div><h1>{title}</h1><p className="subtitle">{desc}</p></div><button className="btn primary">+ Add question</button></div><section className="card panel"><div className="empty">Question bank interface is prepared for Supabase data.</div></section></div></AppShell>}
